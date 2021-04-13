@@ -1,0 +1,6 @@
+footer {
+    height: 60px;
+    /* position: fixed; */
+    bottom: 0;
+    background-color: brown;
+}

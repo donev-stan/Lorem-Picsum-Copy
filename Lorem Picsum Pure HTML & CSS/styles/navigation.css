@@ -5,6 +5,7 @@ nav {
   display: flex;
 
   font-family: "Kiwi Maru", serif;
+  
   font-size: 1.3rem;
 }
 
@@ -31,7 +32,7 @@ nav li {
 nav li:hover {
   cursor: pointer;
   opacity: 1;
-  animation: wiggle 2s ease 0s infinite normal forwards;
+  /* animation: wiggle 2s ease 0s infinite normal forwards; */
 }
 
 @keyframes wiggle {

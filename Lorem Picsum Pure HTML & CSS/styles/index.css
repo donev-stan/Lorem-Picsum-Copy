@@ -4,7 +4,10 @@
 @import url('./gallery.css');
 @import url('./footer.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Lora:ital@1&display=swap');
+/* Kiwi Maru font for links */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+
 
 /* Global */
 * {
@@ -73,6 +76,8 @@ pre.code-box {
 
 main, section {
     padding: 100px 0;
+    font-family: 'Kiwi Maru', serif;
+
 }
 
 .container {
@@ -88,6 +93,14 @@ main, section {
     /* align-items: flex-start; */
 
     padding: 20px;
+}
+
+.info-box p {
+    text-size-adjust: auto;
+}
+
+.info-box pre {
+    width: auto;
 }
 
 @media (max-width: 1080px) {

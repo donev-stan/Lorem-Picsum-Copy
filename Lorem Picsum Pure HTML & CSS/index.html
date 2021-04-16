@@ -13,12 +13,14 @@
         <div>
             <ul>
                 <li id="menu">Menu</li>
-                <li>Docs</li>
-                <li>Specific Image</li>
-                <li>Static Random Image</li>
-                <li>Grayscale</li>
-                <li>Blur</li>
-                <li>Gallery</li>
+                <li><a href="#intro">Docs</a></li>
+                <li><a href="#specific">Specific Image</a></li>
+                <li><a href="#static">Static Random Image</a></li>
+                <li><a href="#grayscale">Grayscale</a></li>
+                <li><a href="#blur">Blur</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#img-details">Details</a></li>
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +43,7 @@
     </main>
 
 <!-- Intro Section -->
-    <section class="dark">
+    <section class="dark" id="intro">
         <div class="container">
             <div style="display: flex; flex-direction: column;">
                 <h2 class="section-title">Easy to use, stylish placeholders</h2>
@@ -62,14 +64,14 @@
     </section>
 
 <!-- Specific Image -->
-    <section>
+    <section id="specific">
         <div class="container">
             <div class="info-box">
                 <h2 class="section-title">Specific Image</h2>
                 <p>Get a specific image by adding <code class="text-code"> /id/{image}</code> to the start of the url.</p>
                 <pre>
                     <code class="dark">
-                        <a href="https://picsum.photos/id/27/400/300" target="_blank">https://picsum.photos/id/237/200/300</a>
+                        <a href="https://picsum.photos/id/77/450/300" target="_blank">https://picsum.photos/id/77/450/300</a>
                     </code>
                 </pre>
             </div>
@@ -81,7 +83,7 @@
     </section>
 
 <!-- Static Random Image -->
-    <section>
+    <section id="static">
         <div class="container">
             <div class="img-box">
                 <img src="https://picsum.photos/seed/picsum/450/300" class="preview-img">
@@ -92,7 +94,7 @@
                 <p>Get the same random image every time based on a seed, by adding <code class="text-code"> /seed/{seed}  </code>to the start of the url.</p>
                 <pre>
                     <code class="dark">
-                        <a href="https://picsum.photos/seed/picsum/450/300" target="_blank">https://picsum.photos/seed/picsum/</a>
+                        <a href="https://picsum.photos/seed/picsum/450/300" target="_blank">https://picsum.photos/seed/picsum/450/300</a>
                     </code>
                 </pre>
             </div>
@@ -100,14 +102,14 @@
     </section>
 
 <!-- Grayscale -->
-    <section class="dark">
+    <section class="dark" id="grayscale">
         <div class="container">
             <div class="info-box">
                 <h2 class="section-title">Grayscale</h2>
                 <p>Get a grayscale image by appending <code class="text-code">?grayscale</code> to the end of the url.</p>
                 <pre>
                     <code class="white">
-                        <a href="https://picsum.photos/450/300?grayscale" target="_blank">https://picsum.photos/536/354?grayscale</a>
+                        <a href="https://picsum.photos/450/300?grayscale" target="_blank">https://picsum.photos/450/300?grayscale</a>
                     </code>
                 </pre>
             </div>
@@ -119,7 +121,7 @@
     </section>
 
 <!-- Blur -->
-    <section class="dark">
+    <section class="dark" id="blur">
         <div class="container">
             <div class="img-box">
                 <img src="https://picsum.photos/450/300/?blur" class="preview-img">
@@ -130,13 +132,13 @@
                 <p>Get a blurred image by appending <code class="text-code">?blur</code> to the end of the url.</p>
                 <pre>
                     <code class="white">
-                        <a href="https://picsum.photos/536/354/?blur" target="_blank">https://picsum.photos/536/354/?blur</a>
+                        <a href="https://picsum.photos/450/300/?blur" target="_blank">https://picsum.photos/450/300/?blur</a>
                     </code>
                 </pre>
                 <p>You can adjust the amount of blur by providing a number between <code class="text-code">1</code> and <code class="text-code">10</code>.</p>
                 <pre>
                     <code class="white">
-                        <a href="https://picsum.photos/536/354/?blur=2" target="_blank">https://picsum.photos/536/354/?blur=2</a>
+                        <a href="https://picsum.photos/450/300/?blur=2" target="_blank">https://picsum.photos/450/300/?blur=2</a>
                     </code>
                 </pre>
             </div>
@@ -144,7 +146,7 @@
     </section>
 
 <!-- Advanced usage -->
-    <section>
+    <section id="advanced">
         <div class="container">
             <div class="info-box">
                 <h2 class="section-title">Advanced Usage</h2>
@@ -152,7 +154,7 @@
                     For example, to get a specific image that is <strong>grayscale</strong> and <strong>blurred</strong>.</p>
                 <pre>
                     <code class="dark">
-                        <a href="https://picsum.photos/id/870/536/354?grayscale&blur=2" target="_blank">https://picsum.photos/id/870/536/354?grayscale&blur=2</a>
+                        <a href="https://picsum.photos/id/870/450/300?grayscale&blur=2" target="_blank">https://picsum.photos/id/870/450/300?grayscale&blur=2</a>
                     </code>
                 </pre>
             </div>
@@ -164,7 +166,7 @@
     </section>
 
 <!-- Image Details -->
-    <section>
+    <section id="img-details">
         <div class="container">
             <div class="img-box">
                 <pre class="code-box">
@@ -194,7 +196,7 @@
     </section>
 
 <!-- List Images -->
-    <section>
+    <section id="img-list">
         <div class="container">
             <div class="info-box">
                 <h2 class="section-title">List Images</h2>
@@ -237,7 +239,7 @@
 
 
 <!-- Gallery -->
-    <section class="dark">
+    <section class="dark" id="gallery">
         <div style="display: flex; margin-bottom: 30px;"><h2 class="section-title">Gallery</h2></div>
         <div class="gallery">
             <div class="frame">

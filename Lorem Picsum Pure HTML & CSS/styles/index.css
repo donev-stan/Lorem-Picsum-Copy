@@ -9,6 +9,8 @@
 * {
     margin: 0 auto;
     padding: 0 auto;
+
+    box-sizing: inherit;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -51,7 +53,7 @@ h2 {
 p {
     font-size: 1.2rem;
     padding: 10px;
-    line-height: 2rem;
+    line-height: 2rem; 
 }
 
 code {
@@ -59,6 +61,9 @@ code {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+
+    box-sizing: inherit;
+    word-wrap: break-word;
 }
 
 .code-link:hover {
@@ -134,13 +139,11 @@ pre.code-box {
     background: white;
     padding: 18px;
     cursor: text;
-
 }
 
 main, section {
     padding: 100px 0;
     font-family: 'Kiwi Maru', serif;
-
 }
 
 .container {
@@ -189,3 +192,49 @@ h2.section-title {
     width: fit-content;
     flex-wrap: wrap;
 }
+
+
+#back-to-top-div {
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+#back-to-top-div img{
+    cursor: pointer;
+    width: 50px;
+    
+}
+
+#back-to-top-div img:hover {
+    animation: backToTop 2s ease 0s infinite alternate forwards;
+
+}
+
+@keyframes backToTop {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateY(-8px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: translateY(8px);
+    }
+  
+    80% {
+      transform: translateY(6.4px);
+    }
+  
+    90% {
+      transform: translateY(-6.4px);
+    }
+  }

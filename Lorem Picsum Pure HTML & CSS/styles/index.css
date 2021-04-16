@@ -1,13 +1,9 @@
 @import url('./navigation.css');
 @import url('./header.css'); 
-@import url('./main.css'); 
 @import url('./gallery.css');
 @import url('./footer.css');
 
-/* Kiwi Maru font for links */
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
-
-
 
 /* Global */
 * {
@@ -15,9 +11,20 @@
     padding: 0 auto;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
-} 
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 img {
     max-width: 100%;
@@ -52,8 +59,59 @@ code {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
-
 }
+
+.code-link:hover {
+    cursor: pointer;
+    animation: attension 1s ease 0s 1 alternate forwards;
+}
+
+@keyframes attension {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
 code.code {
     box-shadow: 0 0 0 1px hsl(240deg 30% 28% / 5%), 0 2px 5px 0 hsl(240deg 30% 28% / 10%), 0 1px 1px 0 hsl(0deg 0% 0% / 7%);
 }
@@ -65,6 +123,11 @@ code a {
     color: blue;
     font-family: 'Kiwi Maru', serif;
     font-size: 0.75rem;
+}
+
+code::selection {
+    color: rgb(73, 155, 73);
+    background: rgb(47, 47, 47);
 }
 
 pre.code-box {

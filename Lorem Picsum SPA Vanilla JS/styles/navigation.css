@@ -1,0 +1,65 @@
+nav {
+  background-color: rgb(165, 51, 51);
+  color: white;
+
+  display: flex;
+
+  font-family: "Kiwi Maru", serif;
+  font-size: 1.3rem;
+}
+
+nav div {
+  flex-basis: 100%;
+}
+
+nav #menu {
+  display: none;
+}
+
+nav ul {
+  height: 60px;
+
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+nav li a{
+  /* opacity: 0.8; */
+  text-decoration: none;
+  color: #cccccc;
+}
+
+nav li a:hover {
+  cursor: pointer;
+  color: white;
+
+  /* opacity: 1; */
+}
+
+@media (max-width: 1080px) {
+  nav {
+    overflow: hidden;
+    height: 60px;
+    transition: height 1s ease 0s;
+  }
+
+  nav #menu {
+    display: flex;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: larger;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    padding-top: 30px;
+  }
+
+  nav:hover {
+    height: 430px;
+  }
+}

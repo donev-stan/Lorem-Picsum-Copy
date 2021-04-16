@@ -1,0 +1,48 @@
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.frame {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    margin: 20px;
+    transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1) 0s;
+    background-color: white;
+}
+
+.frame:hover {
+    opacity: 0.8;
+}
+
+.img-info {
+    display: flex;
+    padding-bottom: 4px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.author-name {
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    font-size: larger;
+    cursor: text;
+    background: #F4F7FC;
+    
+    /* background-color: rgba(59, 58, 58, 0); */
+    box-shadow: 0 0 0 1px hsl(240deg 30% 28% / 5%), 0 2px 5px 0 hsl(240deg 30% 28% / 10%), 0 1px 1px 0 hsl(0deg 0% 0% / 7%);
+}
+
+.img-id {
+    padding: 10px;
+    border-radius: 50px;
+    font-size: large;
+    cursor: pointer;
+    
+    background: #F4F7FC;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 0 0 1px hsl(240deg 30% 28% / 5%), 0 2px 5px 0 hsl(240deg 30% 28% / 10%), 0 1px 1px 0 hsl(0deg 0% 0% / 7%);
+}
+

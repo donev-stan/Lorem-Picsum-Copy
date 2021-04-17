@@ -10,220 +10,174 @@
 <body>
     <a name="top"></a>
 
-<!-- Navigation -->
-    <nav>
-        <div>
-            <ul>
-                <li id="menu">Menu</li>
-                <li><a href="#intro">Docs</a></li>
-                <li><a href="#specific">Specific Image</a></li>
-                <li><a href="#static">Static Random Image</a></li>
-                <li><a href="#grayscale">Grayscale</a></li>
-                <li><a href="#blur">Blur</a></li>
-                <li><a href="#advanced">Advanced</a></li>
-                <li><a href="#img-details">Details</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </div>
-    </nav>
-
 <!-- Header -->
-    <main>
-        <div class="container">
-            <div class="info-box">
-                <div id="heading-title">
-                    <img src="./img/logo.png" class="logo-img">
-                    <h1>Lorem Picsum</h1>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div>
+                <ul>
+                    <li id="menu">Menu</li>
+                    <li><a href="#intro">Docs</a></li>
+                    <li><a href="#specific">Specific Image</a></li>
+                    <li><a href="#static">Static Random Image</a></li>
+                    <li><a href="#grayscale">Grayscale</a></li>
+                    <li><a href="#blur">Blur</a></li>
+                    <li><a href="#advanced">Advanced</a></li>
+                    <li><a href="#img-details">Details</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <section>
+            <div class="container">
+                <div class="info-box">
+                    <div id="heading-title">
+                        <img src="./img/logo.png" class="logo-img">
+                        <h1>Lorem Picsum</h1>
+                    </div>
+                    <h2>The Lorem Ipsum for photos.</h2>
                 </div>
-                <h2>The Lorem Ipsum for photos.</h2>
-            </div>
 
-            <div class="img-box">
-                <img src="https://picsum.photos/536/354" class="preview-img">
+                <div class="img-box">
+                    <img src="https://picsum.photos/536/354" class="preview-img">
+                </div>
             </div>
-        </div>
-    </main>
+        </section>
+    </header>
 
-<!-- Intro Section -->
-    <section class="dark" id="intro">
-        <div class="container">
-            <div style="display: flex; flex-direction: column;">
-                <h2 class="section-title">Easy to use, stylish placeholders</h2>
-                <p>Just add your desired image size <strong>(width & height)</strong> after our URL, and you'll get a random image.</p>
-                <pre>
-                    <code class="code-link white">
-                        <a href="https://picsum.photos/400/300" target="_blank">https://picsum.photos/200/300</a>
-                    </code>
-                </pre>
-                <p>To get a square image, just add the size.</p>
-                <pre>
-                    <code class="code-link white">
-                        <a href="https://picsum.photos/200" target="_blank">https://picsum.photos/200</a>
-                    </code>
-                </pre>
+<!-- Main -->
+    <main>
+    <!-- Intro Section -->
+        <section class="dark" id="intro">
+            <div class="container">
+                <div style="display: flex; flex-direction: column;">
+                    <h2 class="section-title">Easy to use, stylish placeholders</h2>
+                    <p>Just add your desired image size <strong>(width & height)</strong> after our URL, and you'll get a random image.</p>
+                    <pre>
+                        <code class="code-link white">
+                            <a href="https://picsum.photos/400/300" target="_blank">https://picsum.photos/200/300</a>
+                        </code>
+                    </pre>
+                    <p>To get a square image, just add the size.</p>
+                    <pre>
+                        <code class="code-link white">
+                            <a href="https://picsum.photos/200" target="_blank">https://picsum.photos/200</a>
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<!-- Specific Image -->
-    <section id="specific">
-        <div class="container">
-            <div class="info-box">
-                <h2 class="section-title">Specific Image</h2>
-                <p>Get a specific image by adding <code class="text-code"> /id/{image}</code> to the start of the url.</p>
-                <pre>
-                    <code class="code-link dark">
-                        <a href="https://picsum.photos/id/77/450/300" target="_blank">https://picsum.photos/id/77/450/300</a>
-                    </code>
-                </pre>
+    <!-- Specific Image -->
+        <section id="specific">
+            <div class="container">
+                <div class="info-box">
+                    <h2 class="section-title">Specific Image</h2>
+                    <p>Get a specific image by adding <code class="text-code"> /id/{image}</code> to the start of the url.</p>
+                    <pre>
+                        <code class="code-link dark">
+                            <a href="https://picsum.photos/id/77/450/300" target="_blank">https://picsum.photos/id/77/450/300</a>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="img-box">
+                    <img src="https://picsum.photos/id/77/450/300" class="preview-img">
+                </div>
             </div>
+        </section>
 
-            <div class="img-box">
-                <img src="https://picsum.photos/id/77/450/300" class="preview-img">
+    <!-- Static Random Image -->
+        <section id="static">
+            <div class="container">
+                <div class="img-box">
+                    <img src="https://picsum.photos/seed/picsum/450/300" class="preview-img">
+                </div>
+
+                <div class="info-box">
+                    <h2 class="section-title">Static Random Image</h2>
+                    <p>Get the same random image every time based on a seed, by adding <code class="text-code"> /seed/{seed}  </code>to the start of the url.</p>
+                    <pre>
+                        <code class="code-link dark">
+                            <a href="https://picsum.photos/seed/picsum/450/300" target="_blank">https://picsum.photos/seed/picsum/450/300</a>
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<!-- Static Random Image -->
-    <section id="static">
-        <div class="container">
-            <div class="img-box">
-                <img src="https://picsum.photos/seed/picsum/450/300" class="preview-img">
+    <!-- Grayscale -->
+        <section class="dark" id="grayscale">
+            <div class="container">
+                <div class="info-box">
+                    <h2 class="section-title">Grayscale</h2>
+                    <p>Get a grayscale image by appending <code class="text-code">?grayscale</code> to the end of the url.</p>
+                    <pre>
+                        <code class="code-link white">
+                            <a href="https://picsum.photos/450/300?grayscale" target="_blank">https://picsum.photos/450/300?grayscale</a>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="img-box">
+                    <img src="https://picsum.photos/450/300?grayscale" class="preview-img">
+                </div>
             </div>
+        </section>
 
-            <div class="info-box">
-                <h2 class="section-title">Static Random Image</h2>
-                <p>Get the same random image every time based on a seed, by adding <code class="text-code"> /seed/{seed}  </code>to the start of the url.</p>
-                <pre>
-                    <code class="code-link dark">
-                        <a href="https://picsum.photos/seed/picsum/450/300" target="_blank">https://picsum.photos/seed/picsum/450/300</a>
-                    </code>
-                </pre>
+    <!-- Blur -->
+        <section class="dark" id="blur">
+            <div class="container">
+                <div class="img-box">
+                    <img src="https://picsum.photos/450/300/?blur" class="preview-img">
+                </div>
+
+                <div class="info-box">
+                    <h2 class="section-title">Blur</h2>
+                    <p>Get a blurred image by appending <code class="text-code">?blur</code> to the end of the url.</p>
+                    <pre>
+                        <code class="code-link white">
+                            <a href="https://picsum.photos/450/300/?blur" target="_blank">https://picsum.photos/450/300/?blur</a>
+                        </code>
+                    </pre>
+                    <p>You can adjust the amount of blur by providing a number between <code class="text-code">1</code> and <code class="text-code">10</code>.</p>
+                    <pre>
+                        <code class="code-link white">
+                            <a href="https://picsum.photos/450/300/?blur=2" target="_blank">https://picsum.photos/450/300/?blur=2</a>
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<!-- Grayscale -->
-    <section class="dark" id="grayscale">
-        <div class="container">
-            <div class="info-box">
-                <h2 class="section-title">Grayscale</h2>
-                <p>Get a grayscale image by appending <code class="text-code">?grayscale</code> to the end of the url.</p>
-                <pre>
-                    <code class="code-link white">
-                        <a href="https://picsum.photos/450/300?grayscale" target="_blank">https://picsum.photos/450/300?grayscale</a>
-                    </code>
-                </pre>
+    <!-- Advanced usage -->
+        <section id="advanced">
+            <div class="container">
+                <div class="info-box">
+                    <h2 class="section-title">Advanced Usage</h2>
+                    <p>You may combine any of the options above. <br>
+                        For example, to get a specific image that is <strong>grayscale</strong> and <strong>blurred</strong>.</p>
+                    <pre>
+                        <code class="code-link dark">
+                            <a href="https://picsum.photos/id/8/450/300?grayscale&blur=2" target="_blank">https://picsum.photos/id/8/450/300?grayscale&blur=2</a>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="img-box">
+                    <img src="https://picsum.photos/id/8/450/300?grayscale&blur=2" class="preview-img">
+                </div>
             </div>
+        </section>
 
-            <div class="img-box">
-                <img src="https://picsum.photos/450/300?grayscale" class="preview-img">
-            </div>
-        </div>
-    </section>
-
-<!-- Blur -->
-    <section class="dark" id="blur">
-        <div class="container">
-            <div class="img-box">
-                <img src="https://picsum.photos/450/300/?blur" class="preview-img">
-            </div>
-
-            <div class="info-box">
-                <h2 class="section-title">Blur</h2>
-                <p>Get a blurred image by appending <code class="text-code">?blur</code> to the end of the url.</p>
-                <pre>
-                    <code class="code-link white">
-                        <a href="https://picsum.photos/450/300/?blur" target="_blank">https://picsum.photos/450/300/?blur</a>
-                    </code>
-                </pre>
-                <p>You can adjust the amount of blur by providing a number between <code class="text-code">1</code> and <code class="text-code">10</code>.</p>
-                <pre>
-                    <code class="code-link white">
-                        <a href="https://picsum.photos/450/300/?blur=2" target="_blank">https://picsum.photos/450/300/?blur=2</a>
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </section>
-
-<!-- Advanced usage -->
-    <section id="advanced">
-        <div class="container">
-            <div class="info-box">
-                <h2 class="section-title">Advanced Usage</h2>
-                <p>You may combine any of the options above. <br>
-                    For example, to get a specific image that is <strong>grayscale</strong> and <strong>blurred</strong>.</p>
-                <pre>
-                    <code class="code-link dark">
-                        <a href="https://picsum.photos/id/8/450/300?grayscale&blur=2" target="_blank">https://picsum.photos/id/8/450/300?grayscale&blur=2</a>
-                    </code>
-                </pre>
-            </div>
-
-            <div class="img-box">
-                <img src="https://picsum.photos/id/8/450/300?grayscale&blur=2" class="preview-img">
-            </div>
-        </div>
-    </section>
-
-<!-- Image Details -->
-    <section id="img-details">
-        <div class="container">
-            <div class="img-box">
-                <pre class="code-box">
-                    <code class="code">
-{
-    "id": "0",
-    "author": "Alejandro Escamilla",
-    "width": 5616,
-    "height": 3744,
-    "url": "https://unsplash.com/...",
-    "download_url": "https://picsum.photos/..."
-}
-                    </code>
-                </pre>
-            </div>
-
-            <div class="info-box">
-                <h2 class="section-title">Image Details</h2>
-                <p>Get information about a specific image by using the the <code class="text-code">/id/{id}/info</code> endpoint.</p>
-                <pre>
-                    <code class="code-link dark">
-                        <a href="https://picsum.photos/id/0/info" target="_blank">https://picsum.photos/id/0/info</a>
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </section>
-
-<!-- List Images -->
-    <section id="img-list">
-        <div class="container">
-            <div class="info-box">
-                <h2 class="section-title">List Images</h2>
-                <p>Get a list of images by using the <code class="text-code">/v2/list</code> endpoint.</p>
-                <pre>
-                    <code class="code-link dark">
-                        <a href="https://picsum.photos/v2/list" target="_blank">https://picsum.photos/v2/list</a>
-                    </code>
-                </pre>
-                <p>
-                    The API will return 30 items per page by default. <br>
-                    To request another page, use the <code class="text-code">?page</code> parameter. <br>
-                    To change the amount of items per page, use the <code class="text-code">?limit</code> parameter.
-                </p>
-                <pre>
-                    <code class="code-link dark">
-                        <a href="https://picsum.photos/v2/list?page=2&limit=100" target="_blank">https://picsum.photos/v2/list?page=2&limit=100</a>
-                    </code>
-                </pre>
-            </div>
-
-            <div class="img-box">
-                <pre class="code-box">
-                    <code class="code">
-[
+    <!-- Image Details -->
+        <section id="img-details">
+            <div class="container">
+                <div class="img-box">
+                    <pre class="code-box">
+                        <code class="code">
     {
         "id": "0",
         "author": "Alejandro Escamilla",
@@ -232,91 +186,142 @@
         "url": "https://unsplash.com/...",
         "download_url": "https://picsum.photos/..."
     }
-]
-                    </code>
-                </pre>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="info-box">
+                    <h2 class="section-title">Image Details</h2>
+                    <p>Get information about a specific image by using the the <code class="text-code">/id/{id}/info</code> endpoint.</p>
+                    <pre>
+                        <code class="code-link dark">
+                            <a href="https://picsum.photos/id/0/info" target="_blank">https://picsum.photos/id/0/info</a>
+                        </code>
+                    </pre>
+                </div>
             </div>
+        </section>
+
+    <!-- List Images -->
+        <section id="img-list">
+            <div class="container">
+                <div class="info-box">
+                    <h2 class="section-title">List Images</h2>
+                    <p>Get a list of images by using the <code class="text-code">/v2/list</code> endpoint.</p>
+                    <pre>
+                        <code class="code-link dark">
+                            <a href="https://picsum.photos/v2/list" target="_blank">https://picsum.photos/v2/list</a>
+                        </code>
+                    </pre>
+                    <p>
+                        The API will return 30 items per page by default. <br>
+                        To request another page, use the <code class="text-code">?page</code> parameter. <br>
+                        To change the amount of items per page, use the <code class="text-code">?limit</code> parameter.
+                    </p>
+                    <pre>
+                        <code class="code-link dark">
+                            <a href="https://picsum.photos/v2/list?page=2&limit=100" target="_blank">https://picsum.photos/v2/list?page=2&limit=100</a>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="img-box">
+                    <pre class="code-box">
+                        <code class="code">
+    [
+        {
+            "id": "0",
+            "author": "Alejandro Escamilla",
+            "width": 5616,
+            "height": 3744,
+            "url": "https://unsplash.com/...",
+            "download_url": "https://picsum.photos/..."
+        }
+    ]
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+    <!-- Gallery -->
+        <section class="dark" id="gallery">
+            <div style="display: flex; margin-bottom: 30px;"><h2 class="section-title">Gallery</h2></div>
+            <div class="gallery">
+                <div class="frame">
+                    <a href="https://picsum.photos/id/152/3888/2592" target="_blank"><img src="https://picsum.photos/id/152/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Martin</h4>
+                        <h5 class="img-id">#152</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/12/3888/2592" target="_blank"><img src="https://picsum.photos/id/12/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Noel Lopez</h4>
+                        <h5 class="img-id">#12</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/52/3888/2592" target="_blank"><img src="https://picsum.photos/id/52/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: petradr</h4>
+                        <h5 class="img-id">#52</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/2/3888/2592" target="_blank"><img src="https://picsum.photos/id/2/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Thom</h4>
+                        <h5 class="img-id">#2</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/11/3888/2592" target="_blank"><img src="https://picsum.photos/id/11/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Daniel Robert</h4>
+                        <h5 class="img-id">#11</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/55/3888/2592" target="_blank"><img src="https://picsum.photos/id/55/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Kundan Ramisetti</h4>
+                        <h5 class="img-id">#55</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/92/3888/2592" target="_blank"><img src="https://picsum.photos/id/92/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Charlie Foster</h4>
+                        <h5 class="img-id">#92</h5>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <a href="https://picsum.photos/id/122/3888/2592" target="_blank"><img src="https://picsum.photos/id/122/3888/2592" width="450" height="300"></a>
+                    <div class="img-info">
+                        <h4 class="author-name">Author: Edoardo Loru</h4>
+                        <h5 class="img-id">#122</h5>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- Back to top Image -->
+        <div id="back-to-top-div" class="dark">
+            <a href="#top">
+                <img src="./img/backToTop.png" alt="Back to top icon" >
+            </a>
         </div>
-    </section>
-
-
-<!-- Gallery -->
-    <section class="dark" id="gallery">
-        <div style="display: flex; margin-bottom: 30px;"><h2 class="section-title">Gallery</h2></div>
-        <div class="gallery">
-            <div class="frame">
-                <a href="https://picsum.photos/id/152/3888/2592" target="_blank"><img src="https://picsum.photos/id/152/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Martin</h4>
-                    <h5 class="img-id">#152</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/12/3888/2592" target="_blank"><img src="https://picsum.photos/id/12/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Noel Lopez</h4>
-                    <h5 class="img-id">#12</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/52/3888/2592" target="_blank"><img src="https://picsum.photos/id/52/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: petradr</h4>
-                    <h5 class="img-id">#52</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/2/3888/2592" target="_blank"><img src="https://picsum.photos/id/2/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Thom</h4>
-                    <h5 class="img-id">#2</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/11/3888/2592" target="_blank"><img src="https://picsum.photos/id/11/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Daniel Robert</h4>
-                    <h5 class="img-id">#11</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/55/3888/2592" target="_blank"><img src="https://picsum.photos/id/55/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Kundan Ramisetti</h4>
-                    <h5 class="img-id">#55</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/92/3888/2592" target="_blank"><img src="https://picsum.photos/id/92/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Charlie Foster</h4>
-                    <h5 class="img-id">#92</h5>
-                </div>
-            </div>
-
-            <div class="frame">
-                <a href="https://picsum.photos/id/122/3888/2592" target="_blank"><img src="https://picsum.photos/id/122/3888/2592" width="450" height="300"></a>
-                <div class="img-info">
-                    <h4 class="author-name">Author: Edoardo Loru</h4>
-                    <h5 class="img-id">#122</h5>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-<!-- Back to top Image -->
-    <div id="back-to-top-div" class="dark">
-        <a href="#top">
-            <img src="./img/backToTop.png" alt="Back to top icon" >
-        </a>
-    </div>
+    </main>
     
 <!-- Footer -->
     <footer>

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
     <link rel="stylesheet" href="./styles/index.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="./scripts/services.js" type="module"></script>
     <script src="./scripts/init.js" type="module" defer></script>
+
     <title>Lorem Picsum</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
 
     <div id="root"></div>
 
-<!-- Header -->
+<!-- Header
     <main>
         <div class="container">
             <div class="info-box">
@@ -44,40 +45,55 @@
                 <img src="https://picsum.photos/536/354" class="preview-img">
             </div>
         </div>
-    </main>
+    </main> -->
+
+<script type="text/x-handlebars-template" id="search-template">
+    <div class="container" style="margin-top: 100px;">
+        <code class="white input-group">
+            <span>https://picsum.photos/</span>
+            <input class="inputURL" type="text" >
+            <button class="tryURL" onclick="getImage(event)">Try</button>
+        </code>
+    </div>
+</script>
 
 <!-- Intro Section -->
 <script type="text/x-handlebars-template" id="random-img-template">
     <section class="dark" id="intro">
         <div class="container">
-            <div style="display: flex; flex-direction: column;">
-                <h2 class="section-title">Easy to use, stylish placeholders</h2>
+            <div class="info-box">
+                <h2 class="section-title">Random Image</h2>
                 <p>Just add your desired image size <strong>(width & height)</strong> after our URL, and you'll get a random image.</p>
+                <p>To get a square image, just add the size.</p>
                 <pre>
                     <code class="code-link white">
                         <a href="https://picsum.photos/400/300" target="_blank">https://picsum.photos/200/300</a>
                     </code>
                 </pre>
-                <p>To get a square image, just add the size.</p>
-                <pre>
-                    <code class="code-link white">
-                        <a href="https://picsum.photos/200" target="_blank">https://picsum.photos/200</a>
-                    </code>
-                </pre>
+               
+            </div>
+
+            <div class="img-box">
+                <img src="https://picsum.photos/id/77/450/300" class="preview-img">
             </div>
         </div>
+        
+        {{>search-template}}
     </section>
 </script>
 
+
+
+
 <!-- Specific Image -->
 <script type="text/x-handlebars-template" id="specific-img-template">
-    <section id="specific">
+    <section id="specific" class="dark">
         <div class="container">
             <div class="info-box">
                 <h2 class="section-title">Specific Image</h2>
                 <p>Get a specific image by adding <code class="text-code"> /id/{image}</code> to the start of the url.</p>
                 <pre>
-                    <code class="code-link dark">
+                    <code class="code-link white">
                         <a href="https://picsum.photos/id/77/450/300" target="_blank">https://picsum.photos/id/77/450/300</a>
                     </code>
                 </pre>
@@ -87,13 +103,15 @@
                 <img src="https://picsum.photos/id/77/450/300" class="preview-img">
             </div>
         </div>
+        {{>search-template}}
+
     </section>
 </script>
     
 
 <!-- Static Random Image -->
 <script type="text/x-handlebars-template" id="static-img-template">
-    <section id="static">
+    <section id="static" class="dark">
         <div class="container">
             <div class="img-box">
                 <img src="https://picsum.photos/seed/picsum/450/300" class="preview-img">
@@ -103,12 +121,14 @@
                 <h2 class="section-title">Static Random Image</h2>
                 <p>Get the same random image every time based on a seed, by adding <code class="text-code"> /seed/{seed}  </code>to the start of the url.</p>
                 <pre>
-                    <code class="code-link dark">
+                    <code class="code-link white">
                         <a href="https://picsum.photos/seed/picsum/450/300" target="_blank">https://picsum.photos/seed/picsum/450/300</a>
                     </code>
                 </pre>
             </div>
         </div>
+        {{>search-template}}
+
     </section>
 </script>
 
@@ -130,6 +150,8 @@
                 <img src="https://picsum.photos/450/300?grayscale" class="preview-img">
             </div>
         </div>
+        {{>search-template}}
+
     </section>
 </script>
 
@@ -157,6 +179,8 @@
                 </pre>
             </div>
         </div>
+        {{>search-template}}
+
     </section>
 </script>
 
@@ -182,11 +206,11 @@
 
 <!-- Image Details -->
 <script type="text/x-handlebars-template" id="details-img-template">
-    <section id="img-details">
+    <section id="img-details" class="dark">
         <div class="container">
             <div class="img-box">
                 <pre class="code-box">
-                    <code class="code">
+                    <code class="code white">
 {
     "id": "0",
     "author": "Alejandro Escamilla",
@@ -203,25 +227,27 @@
                 <h2 class="section-title">Image Details</h2>
                 <p>Get information about a specific image by using the the <code class="text-code">/id/{id}/info</code> endpoint.</p>
                 <pre>
-                    <code class="code-link dark">
+                    <code class="code-link white">
                         <a href="https://picsum.photos/id/0/info" target="_blank">https://picsum.photos/id/0/info</a>
                     </code>
                 </pre>
             </div>
         </div>
+        {{>search-template}}
+
     </section>
 </script>
 
 
 <!-- List Images -->
 <script type="text/x-handlebars-template" id="list-img-template">
-    <section id="img-list">
+    <section id="img-list" class="dark">
         <div class="container">
             <div class="info-box">
                 <h2 class="section-title">List Images</h2>
                 <p>Get a list of images by using the <code class="text-code">/v2/list</code> endpoint.</p>
                 <pre>
-                    <code class="code-link dark">
+                    <code class="code-link white">
                         <a href="https://picsum.photos/v2/list" target="_blank">https://picsum.photos/v2/list</a>
                     </code>
                 </pre>
@@ -231,7 +257,7 @@
                     To change the amount of items per page, use the <code class="text-code">?limit</code> parameter.
                 </p>
                 <pre>
-                    <code class="code-link dark">
+                    <code class="code-link white">
                         <a href="https://picsum.photos/v2/list?page=2&limit=100" target="_blank">https://picsum.photos/v2/list?page=2&limit=100</a>
                     </code>
                 </pre>
@@ -239,7 +265,7 @@
 
             <div class="img-box">
                 <pre class="code-box">
-                    <code class="code">
+                    <code class="code white">
 [
     {
         "id": "0",
@@ -254,6 +280,8 @@
                 </pre>
             </div>
         </div>
+        {{>search-template}}
+
     </section>
 </script>
 
@@ -329,7 +357,7 @@
 
 <!-- Footer -->
     <footer>
-        <p>Web Design Project</p>
+        <p>Simple Vanilla JS SPA Project</p>
     </footer>
 </body>
 </html>

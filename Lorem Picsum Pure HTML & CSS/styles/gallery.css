@@ -27,7 +27,7 @@
     padding: 5px 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
-    font-size: larger;
+    font-size: 20px;
     cursor: text;
     background: #F4F7FC;
     
@@ -38,7 +38,7 @@
 .img-id {
     padding: 10px;
     border-radius: 50px;
-    font-size: large;
+    font-size: 18px;
     cursor: pointer;
     
     background: #F4F7FC;
@@ -46,3 +46,32 @@
     box-shadow: 0 0 0 1px hsl(240deg 30% 28% / 5%), 0 2px 5px 0 hsl(240deg 30% 28% / 10%), 0 1px 1px 0 hsl(0deg 0% 0% / 7%);
 }
 
+@media (max-width: 440px) {
+    .author-name {
+        font-size: 18px;
+    }
+
+    .img-id {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 340px) {
+    .author-name {
+        font-size: 16px;
+    }
+
+    .img-id {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 240px) {
+    .author-name {
+        font-size: 14px;
+    }
+
+    .img-id {
+        font-size: 12px;
+    }
+}

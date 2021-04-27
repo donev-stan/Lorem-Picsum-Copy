@@ -2,9 +2,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    font-size: 1.5rem;
-    font-family: 'Kiwi Maru', serif;
-
+    font-size: 30px;
+    font-family: "Kiwi Maru", serif;
 }
 
 .logo-img {
@@ -12,4 +11,31 @@
     height: 50px;
     padding-right: 15px;
     padding-top: 10px;
+}
+
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 720px) {
+    .logo-img {
+        display: none;
+    }
+}
+
+@media (max-width: 340px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
 }

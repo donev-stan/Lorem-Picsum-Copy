@@ -3,6 +3,7 @@ nav {
   color: white;
 
   display: flex;
+  justify-content: center;
 
   font-family: "Kiwi Maru", serif;
   /* font-size: 1.3rem; */
@@ -10,7 +11,7 @@ nav {
 }
 
 nav div {
-  flex-basis: 100%;
+  flex-basis: 80%;
   padding: 0;
   margin: 0;
 }

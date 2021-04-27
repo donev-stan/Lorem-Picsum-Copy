@@ -161,7 +161,6 @@ section {
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
 
     padding: 20px;
 }

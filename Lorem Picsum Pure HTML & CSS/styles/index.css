@@ -55,7 +55,6 @@ h2 {
 }
 
 p {
-    font-size: rem;
     padding: 10px;
     line-height: 1.8; 
     text-align: center;
@@ -199,8 +198,8 @@ h2.section-title {
     padding: 0px 5px;
     width: fit-content;
     flex-wrap: wrap;
+    background-color: #F4F7FC;
 }
-
 
 #back-to-top-div {
     display: flex;
@@ -270,9 +269,6 @@ h2.section-title {
     .code {
         font-size: 12px;
     }
-
-
-
 }
 
 @media (max-width: 450px) {
@@ -294,4 +290,3 @@ h2.section-title {
         font-size: 8px;
     }
 }
-

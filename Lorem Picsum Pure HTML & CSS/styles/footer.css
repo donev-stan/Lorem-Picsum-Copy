@@ -4,14 +4,28 @@ footer {
     background-color: brown;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    
     /*  Fixed on screen
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%; 
     */
+}
+
+footer p {
+    line-height: normal;
+    padding: 3px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    color: lightblue;
 }

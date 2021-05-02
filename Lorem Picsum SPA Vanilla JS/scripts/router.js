@@ -25,8 +25,6 @@ const router = (path) => {
 const navigate = (path) => {
     history.pushState({}, '', path);
     router(path);
-
-
 };
 
 export default navigate;

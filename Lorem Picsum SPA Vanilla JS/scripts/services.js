@@ -9,7 +9,4 @@ export function getImage(e){
     resultIMG.src = `${baseURL}${input}`;
 
     console.log(input);
-    // console.log("aswbe");
-
 }
-

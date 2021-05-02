@@ -26,6 +26,3 @@ import {getImage} from './services.js';
     
 
 })();
-
-
-

@@ -324,8 +324,24 @@
     
 <!-- Footer -->
     <footer>
-        <p>Web Design Project</p>
-        <p>Source: <a href="https://picsum.photos" target="_blank">Picsum Photos</a></p>
+        <div class="container">
+            <div class="info-box">
+                <p>Web Design Project</p>
+                <p>Source: <a href="https://picsum.photos" target="_blank">Picsum Photos</a></p>
+            </div>
+
+            <div class="img-box">
+                <div class="container">
+                    <div class="newsletter" style="display: flex; flex-direction: column;">
+                        <h2>Subscribe</h2>
+                        <label><input type="checkbox" name="apiSubscribe" checked> Opt in for API updates</label>
+                        <label><input type="checkbox" name="dailyImage" checked> Opt in for daily random images with their author</label>
+                        <input type="email" name="myInput" placeholder="your@email.com" size="50" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 footer {
-    height: auto;
+    height: 60px;
     color: white;
     background-color: brown;
 
@@ -19,6 +19,7 @@ footer {
 footer p {
     line-height: normal;
     padding: 3px;
+    font-size: larger;
 }
 
 footer p a {
@@ -28,21 +29,4 @@ footer p a {
 
 footer p a:hover {
     color: lightblue;
-}
-
-footer .info-box {
-    /* flex-basis: 60%; */
-}
-
-footer .newsletter-wrapper {
-    justify-content: flex-end;
-}
-
-.newsletter {
-    color: black;
-    background-color: white;
-    padding: 10px 50px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
 }
